@@ -1,0 +1,46 @@
+:root {
+  --bg-color: #ffffff;
+  --text-color: #212529;
+  --section-bg: #f8f9fa;
+}
+
+[data-theme="dark"] {
+  --bg-color: #212529;
+  --text-color: #f8f9fa;
+  --section-bg: #343a40;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: all 0.3s ease;
+}
+
+#home {
+  height: 100vh;
+  background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=1200') center/cover;
+}
+
+.bg-light {
+  background-color: var(--section-bg)!important;
+}
+
+.navbar {
+  transition: all 0.3s ease;
+}
+
+.progress {
+  height: 20px;
+}
+
+.card {
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+section {
+  scroll-margin-top: 70px;
+}
